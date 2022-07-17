@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Integrando HTML ao Flask</title>
+    <title>Lista de Frutas</title>
 </head>
 <body>
-<h2>Integração do HTML com Flask</h2>
+<h2 style="text-align: center">Lista de Frutas</h2>
 <hr />
+<ol>
+    {% for fruta in frutas %}
+        <li>{{ fruta }}</li>
+    {% endfor %}
+    <form action="{{url_for('principal')}}" method="post">
+        <label>Fruta</label>
+        <input type="text" name="fruta">
+        <button>Adicionar</button>
+    </form>
+</ol>
+
 </body>
 </html>

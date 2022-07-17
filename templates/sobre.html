@@ -5,7 +5,20 @@
     <title>Sobre</title>
 </head>
 <body>
-<h2>Sobre mim</h2>
+<h2 style="text-align: center">Diário do Professor</h2>
 <hr />
+    {% for registro in registros %}
+        <details>
+            <summary>{{registro.aluno}}</summary>
+            <p>{{registro.nota}}</p>
+        </details>
+    {% endfor %}
+    <form action="{{url_for('sobre')}}" method="post">
+        <label>Aluno</label>
+        <input type="text" name="aluno" required>
+        <label>Nota</label>
+        <input type="text" name="nota" required>
+        <button>Adicionar</button>
+    </form>
 </body>
 </html>
