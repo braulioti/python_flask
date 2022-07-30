@@ -11,7 +11,7 @@ Estudos do Curso de programação Python de [Marcos Castro](https://www.udemy.co
 
 1. ~~Introdução~~
 2. ~~Manipulação e Envio de Dados~~
-3. Templates e Estilos
+3. ~~Templates e Estilos~~
 4. Integração com APIs
 5. Integração com Banco de Dados
 6. Desenvolvimento de APIs

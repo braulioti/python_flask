@@ -1,24 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sobre</title>
-</head>
-<body>
-<h2 style="text-align: center">Diário do Professor</h2>
-<hr />
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2 style="text-align: center">Diário do Professor</h2>
+    <hr />
     {% for registro in registros %}
-        <details>
-            <summary>{{registro.aluno}}</summary>
-            <p>{{registro.nota}}</p>
-        </details>
+        <p>
+            <a class="btn btn-secondary"
+               data-bs-toggle="collapse"
+               href="#collapseExample_{{registro.aluno}}"
+               role="button"
+               aria-expanded="false"
+               aria-controls="collapseExample"
+            >{{registro.aluno}}</a>
+        </p>
+        <div class="collapse" id="collapseExample_{{registro.aluno}}">
+            <div class="card card-body">
+                {{registro.nota}}
+            </div>
+        </div>
     {% endfor %}
+
     <form action="{{url_for('sobre')}}" method="post">
-        <label>Aluno</label>
-        <input type="text" name="aluno" required>
-        <label>Nota</label>
-        <input type="text" name="nota" required>
-        <button>Adicionar</button>
+        <div class="form-group">
+            <label>Aluno</label>
+            <input type="text"
+                   name="aluno"
+                   class="form-control"
+                   required
+                   placeholder="Digite o nome do aluno"
+            >
+        </div>
+        <div class="form-group">
+            <label>Nota</label>
+            <input type="text"
+                   name="nota"
+                   class="form-control"
+                   required
+                   placeholder="Digite uma nota"
+            >
+        </div>
+        <button class="btn btn-success">Adicionar</button>
     </form>
-</body>
-</html>
+{% endblock conteudo %}
