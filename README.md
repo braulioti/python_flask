@@ -20,6 +20,10 @@ Estudos do Curso de programação Python de [Marcos Castro](https://www.udemy.co
 9. Deploy API Heroku
 10. [BÔNUS] Consumindo API e Assistente Virtual
 
+## Repositórios Relacionados
+
+- [Desenvolvimento Web com Flask (Módulo API)](https://github.com/braulioti/python_flask_api)
+
 ## Sobre Mim
 
 - Email: braulio@braulioti.com.br
