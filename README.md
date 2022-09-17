@@ -17,8 +17,9 @@ Estudos do Curso de programação Python de [Marcos Castro](https://www.udemy.co
 6. Desenvolvimento de APIs
 7. Utilizando Relacionamentos em APIs
 8. Segurança e Documentação em APIs
-9. Deploy API Heroku
-10. [BÔNUS] Consumindo API e Assistente Virtual
+9. ~~Deploy API Heroku~~
+10. [BÔNUS] Upload de Imagens
+11. [BÔNUS] Consumindo API e Assistente Virtual
 
 ## Repositórios Relacionados
 
